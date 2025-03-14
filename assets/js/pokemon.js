@@ -36,7 +36,7 @@ boton.addEventListener("click", () => {
         })
         .then(speciesData => {
             colorElement.textContent = speciesData.color.name;
-            habitatElement.textContent = speciesData.habitat ? speciesData.habitat.name : "Desconocido"; // Evita errores si es null
+            habitatElement.textContent = speciesData.habitat ? speciesData.habitat.name : "Desconocido"; 
         })
         .catch(error => {
             console.error(error.message);
